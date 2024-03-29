@@ -1,0 +1,18 @@
+cmake_minimum_required (VERSION 3.16)
+project ("project")
+include_directories("./include")
+file(GLOB SOURCES "./src/*.cpp" "./src/*.c" "./include/*.cpp")
+add_executable(${PROJECT_NAME} ${SOURCES})
+find_package(OpenMP REQUIRED)
+if(OpenMP_CXX_FOUND)
+    target_link_libraries(${PROJECT_NAME} PRIVATE OpenMP::OpenMP_CXX)
+endif()
+
+set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS} -O2")
+
+file(GLOB_RECURSE RESOURCES "scenes/*")
+foreach(RESOURCE ${RESOURCES})
+  file(RELATIVE_PATH RESOURCE_REL ${CMAKE_SOURCE_DIR} ${RESOURCE})
+  get_filename_component(RESOURCE_PATH ${RESOURCE_REL} DIRECTORY)
+  file(COPY ${RESOURCE} DESTINATION ${CMAKE_BINARY_DIR}/${RESOURCE_PATH})
+endforeach()

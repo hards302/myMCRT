@@ -1,0 +1,12 @@
+# ninja log v5
+24	1352	7333316374493451	CMakeFiles/project.dir/src/main.cpp.obj	9fdce7269827b98c
+34	1294	7333314406432302	CMakeFiles/project.dir/include/tiny_obj_loader.cpp.obj	6fc7029f25e22172
+37	383	7333314397326229	CMakeFiles/project.dir/include/tinyxml2.cpp.obj	69ff6a52b38a8d7d
+1412	2011	7333316380048621	project.exe	ce032b9cb3a98b93
+15	775	7333314401245743	CMakeFiles/project.dir/include/draw.cpp.obj	872a5d737bbc5e0b
+18	1135	7333314404856533	CMakeFiles/project.dir/include/loadinfo.cpp.obj	f4dcd8766f06f60c
+9	18	0	clean	8c45b54705a541e8
+21	921	7333314402701850	CMakeFiles/project.dir/include/loadshapes.cpp.obj	19ab80b4586cf2bb
+30	1069	7333314404197850	CMakeFiles/project.dir/include/shape.cpp.obj	a1e26a449d6cc9fe
+11	1007	7333314403569525	CMakeFiles/project.dir/include/bvh.cpp.obj	51464a53c0847963
+18	1411	7333316375090723	CMakeFiles/project.dir/include/rayTracer.cpp.obj	e400124bf556af54
